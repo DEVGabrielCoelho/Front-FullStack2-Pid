@@ -4,7 +4,7 @@ import { Container, Stack } from "react-bootstrap";
 import "./styled.css";
 import Header from "../../Components/Header";
 import CarouselComponent from "../../Components/Carousel";
-import { SearchBar } from "../../Components/SearchBar/SearchBar";
+import SearchBar from "../../Components/SearchBar/SearchBar";
 
 const Home = () => {
   return (
