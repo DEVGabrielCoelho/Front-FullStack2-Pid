@@ -11,15 +11,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/frontEndFullStack2/" element={<Login />} />
-          <Route path="/frontEndFullStack2/Home" element={<Home />} />
+          <Route path="/" element={<Login />} />
+          <Route path="/Home" element={<Home />} />
           {/* <Route path="/CadastroProduto" element={<CadProdutos />} /> */}
-          <Route
-            path="/frontEndFullStack2/CadastroPessoas"
-            element={<TelaCadPessoa />}
-          />
-          {/* <Route path="/frontEndFullStack2/CadastroServicos" element={<CadServicos />} />
-          <Route path="/frontEndFullStack2/CadastroCategoria" element={<CadCategoria/>} /> */}
+          <Route path="/CadastroPessoas" element={<TelaCadPessoa />} />
+          {/* <Route path="/CadastroServicos" element={<CadServicos />} />
+          <Route path="/CadastroCategoria" element={<CadCategoria/>} /> */}
         </Routes>
       </BrowserRouter>
     </>
