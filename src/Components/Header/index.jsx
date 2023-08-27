@@ -63,25 +63,28 @@ export default function Header() {
                     className="justify-content-end flex-grow-1 pe-3"
                     id="sidebar"
                   >
-                    <NavLink id="navlink" to="/Home">
+                    <NavLink id="navlink" to="/frontEndFullStack2/Home">
                       Home
                     </NavLink>
-                    <hr />
-                    <NavLink id="navlink" to="/CadastroProduto">
+                    {/* <hr /> */}
+                    {/* <NavLink id="navlink" to="/frontEndFullStack2/CadastroProduto">
                       Cadastro Produto
-                    </NavLink>
+                    </NavLink> */}
                     <hr />
-                    <NavLink id="navlink" to="/CadastroPessoas">
+                    <NavLink
+                      id="navlink"
+                      to="/frontEndFullStack2/CadastroPessoas"
+                    >
                       Cadastro Pessoas
                     </NavLink>
-                    <hr />
-                    <NavLink id="navlink" to="/CadastroServicos">
+                    {/* <hr />
+                    <NavLink id="navlink" to="/frontEndFullStack2/CadastroServicos">
                       Cadastro Servicos
                     </NavLink>
                     <hr />
-                    <NavLink id="navlink" to="/CadastroCategoria">
+                    <NavLink id="navlink" to="/frontEndFullStack2/CadastroCategoria">
                       Cadastro Categoria
-                    </NavLink>
+                    </NavLink> */}
                     <hr />
                   </Nav>
                 </Navbar.Collapse>

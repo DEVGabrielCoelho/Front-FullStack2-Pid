@@ -6,7 +6,6 @@ import {
   Button,
   InputGroup,
   FormControl,
-  Stack,
 } from "react-bootstrap";
 import { MdModeEdit } from "react-icons/md";
 import { HiTrash } from "react-icons/hi";
@@ -69,43 +68,33 @@ export default function TableServico(props) {
           {props.listaServicos?.map((servico) => {
             return (
               <tr key={servico.id}>
-                <td className="text-center">{servico.id}</td>
-                <td className="text-center">{servico.servico}</td>
-                <td className="text-center">{servico.jornada}</td>
-                <td className="text-center">{servico.descricao}</td>
-                <td className="text-center">{servico.custo}</td>
-                <td className="text-center">{servico.modelo}</td>
+                <td>{servico.id}</td>
+                <td>{servico.servico}</td>
+                <td>{servico.jornada}</td>
+                <td>{servico.descricao}</td>
+                <td>{servico.custo}</td>
+                <td>{servico.modelo}</td>
                 <td>
-                  <Stack
-                    direction="horizontal"
-                    className="justify-content-center"
-                    gap={4}
+                  <Button variant="outline-primary"
+                    onClick={() => {
+                      if (
+                        window.confirm("Deseja atualizar os dados do serviço?")
+                      ) {
+                        props.editar(servico);
+                      }
+                    }}
                   >
-                    <Button
-                      variant="outline-primary"
-                      onClick={() => {
-                        if (
-                          window.confirm(
-                            "Deseja atualizar os dados do serviço?"
-                          )
-                        ) {
-                          props.editar(servico);
-                        }
-                      }}
-                    >
-                      <MdModeEdit />
-                    </Button>{" "}
-                    <Button
-                      variant="outline-danger"
-                      onClick={() => {
-                        if (window.confirm("Deseja excluir?")) {
-                          props.deletar(servico);
-                        }
-                      }}
-                    >
-                      <HiTrash />
-                    </Button>
-                  </Stack>
+                    <MdModeEdit />
+                  </Button>{" "}
+                  <Button variant="outline-danger"
+                    onClick={() => {
+                      if (window.confirm("Deseja excluir?")) {
+                        props.deletar(servico);
+                      }
+                    }}
+                  >
+                    <HiTrash />
+                  </Button>
                 </td>
               </tr>
             );
