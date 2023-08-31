@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import Imag1 from "../../assets/Img1.jpg";
-import Imag2 from "../../assets/Img2.jpeg";
-import Imag3 from "../../assets/Img3.jpeg";
+import Imag2 from "../../assets/Img2.jpg";
+import Imag3 from "../../assets/Img3.jpg";
 
 const listImg = [
   { name: "Img1", url: Imag1 },

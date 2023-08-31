@@ -14,7 +14,7 @@ function Login() {
       console.log("Autenticação bem-sucedida");
 
       // Redirecionar para a página inicial
-      navigate("/frontEndFullStack2/Home");
+      navigate("/Home");
     } else {
       // Autenticação falhou
       alert("Credenciais inválidas");

@@ -6,6 +6,8 @@ import { IMaskInput } from "react-imask";
 function FormPessoa(props) {
   const [validated, setValidated] = useState(false);
   const [pessoa, setPessoa] = useState(props.pessoa);
+  const [clientSelect, setClientSelect] = useState({});
+  const [formValid, setFormValid] = useState(false);
 
   function manipularMudanca(e) {
     const elemForm = e.currentTarget;
